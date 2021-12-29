@@ -103,7 +103,7 @@ const init = function () {
 };
 
 init();
-console.log(state.bookmarks);
+console.log('stable ^_^');
 
 const clearBookmarks = function () {
   localStorage.clear('bookmarks');
