@@ -131,3 +131,5 @@ const init = function () {
 init();
 // window.addEventListener('hashchange', controlRecipes);
 // window.addEventListener('load', controlRecipes);
+
+console.log('new');
