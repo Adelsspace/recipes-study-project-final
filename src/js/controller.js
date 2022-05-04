@@ -11,14 +11,6 @@ import paginationView from './views/paginationView.js';
 import { async } from 'regenerator-runtime';
 import addRecipeView from './views/addRecipeView.js';
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -45,11 +37,8 @@ const controlSearchResults = async function () {
 
     await model.loadSearchResults(query);
 
-    // resultsView.render(model.state.search.results);
-    // console.log(`MODEL GET SEARH ${model.getSearchResultPage}`);
     resultsView.render(model.getSearchResultPage());
 
-    //4)
     paginationView.render(model.state.search);
   } catch (err) {
     console.log(err);
@@ -102,7 +91,7 @@ const controlAddRecipe = async function (newRecipe) {
 
     //change id in url
     window.history.pushState(null, '', `#${model.state.recipe.id}`); //(state, title, id)
-    //window.history.back();
+
     //close form window
     setTimeout(function () {
       addRecipeView.toggleWindow();
@@ -129,7 +118,5 @@ const init = function () {
 };
 
 init();
-// window.addEventListener('hashchange', controlRecipes);
-// window.addEventListener('load', controlRecipes);
 
 console.log('new');
