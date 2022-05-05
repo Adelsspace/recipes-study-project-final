@@ -14,6 +14,8 @@ Recipe application with custom uploads!
 
 [live demo](https://recipes-adel.netlify.app/)
 
+[Посмотреть на другие мои проекты](https://github.com/Adelsspace/study-projects)
+
 Подробнее на схеме
 
 ![flow-chart](https://github.com/Adelsspace/recipes-study-project-final/blob/master/forkify-flowchart-part-3.png?raw=true)
